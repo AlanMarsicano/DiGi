@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Currículum Vitae</title>
+    <!-- Fuente profesional de Google Fonts -->
+    <link href="https://googleapis.com" rel="stylesheet">
+
+    <style>
+
+        :root {
+            --primary-color: #1e3a8a; /* Azul Marino */
+            --text-color: #334155;    /* Gris Oscuro */
+            --bg-color: #f8fafc;      /* Blanco Grisáceo */
+            --accent-color: #64748b;  /* Gris Medio */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        /* Contenedor Principal (Una sola columna ideal para ATS) */
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Encabezado / Datos Personales */
+        header {
+            text-align: center;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 25px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            font-weight: 300;
+            margin-top: 5px;
+        }
+
+        .contact-info {
+            margin-top: 15px;
+            font-size: 0.95rem;
+        }
+
+        .contact-info a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+            color: var(--primary-color);
+        }
+
+        /* Estructura de Secciones */
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* Bloques de Experiencia y Educación */
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        .item-sub {
+            font-style: italic;
+            color: var(--accent-color);
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+
+        ul {
+            list-style-position: inside;
+            padding-left: 10px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        /* Habilidades */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        .skill-tag {
+            background-color: #f1f5f9;
+            color: #475569;
+            padding: 8px 12px;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Adaptabilidad Móvil */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .cv-container {
+                padding: 20px;
+            }
+            .item-header {
+                flex-direction: column;
+            }
+            .contact-info span {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+
+    <!-- Datos Personales -->
+    <header>
+        <h1>Alan Marsicano</h1>
+        <p> </p>
+        <div class="contact-info">
+            <a href="mailto:alan.marsicano@grupoandersons.com">alan.marsicano@grupoandersons.com</a> |
+            <span>+34 662637114</span> |
+            <span>Lezo, Gipuzkoa</span> |
+        </div>
+    </header>
+
+    <!-- Perfil Profesional -->
+    <section>
+        <h2>Perfil</h2>
+        <p>Profesional de alimentos y bebidas con más de 10 años de experiencia en
+            restaurantes de alto nivel, especializado en cortes y fine dining. Experto en
+            crear experiencias excepcionales para el cliente, gestionar equipos
+            multiculturales, optimizar procesos de servicio y maximizar ingresos
+            mediante estrategias de venta sugestiva. Con enfoque en liderazgo,
+            capacitación y motivación de equipos, orientado a resultados y a la
+            excelencia operativa.</p>
+    </section>
+
+    <!-- Experiencia Laboral -->
+    <section>
+        <h2>Experiencia Laboral</h2>
+
+        <div class="item">
+            <div class="item-header">
+                <span>Mandil</span>
+                <span>Febrero 2021 - Abril 2025</span>
+            </div>
+            <div class="item-sub">Ilios Greek Estiatorio by Grupoandersosn</div>
+            <ul>
+                <li>Gestión integral de operaciones de sala: supervisión de staff,
+                    coordinación de servicios y control de estándares de hospitalidad.</li>
+                <li>Implementación de estrategias de venta sugestiva logrando incremento
+                    del cheque promedio.</li>
+                <li>Administración de inventarios de vinos, bebidas y recursos humanos.</li>
+                <li>Resolución inmediata de incidencias, garantizando satisfacción del
+                    cliente en un entorno de alto volumen</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span>Mesero</span>
+                <span>2019 - 2021</span>
+            </div>
+            <div class="item-sub">HARRY´S Mexico</div>
+            <ul>
+                <li>Referencia clave en servicio de cortes y fine dining, brindando atención
+                    personalizada y anticipando necesidades del cliente.</li>
+                <li>Mentoría y capacitación de nuevos colaboradores en técnicas de servicio,
+                    protocolos y upselling.</li>
+                <li>Responsable de alcanzar y superar objetivos de ventas mediante
+                    recomendaciones estratégicas de vinos y cortes premium.</li>
+                <li>Colaboración directa con gerencia para consolidar la marca como uno de
+                    los mejores restaurantes de México.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Formación Académica -->
+    <section>
+        <h2>Educación</h2>
+
+        <div class="item">
+            <div class="item-header">
+                <span>Relaciones Comerciales</span>
+                <span>2012 2015</span>
+            </div>
+            <div class="item-sub">Escuela Superior de Comercio y Administracion, MEXICO</div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section>
+        <h2>Habilidades</h2>
+        <div class="skills-grid">
+            <div class="skill-tag">Liderasgo y gestion de equipos</div>
+            <div class="skill-tag">upselling y cross-selling</div>
+            <div class="skill-tag">control de inventarios y costos</div>
+            <div class="skill-tag">Comunicacion efectiva y trato al cliente VIP</div>
+            <div class="skill-tag">Resolucion de conflictos y toma de decisiones</div>
+            <div class="skill-tag">Alta tolerancia a la presion en entornos dinamicos</div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
